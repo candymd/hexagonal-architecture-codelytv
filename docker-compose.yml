@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:12.8-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "mypassword"
+      POSTGRES_DB: "videos_db"
